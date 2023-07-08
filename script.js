@@ -3,6 +3,7 @@ let li = document.querySelectorAll('li');
 let imgEye = document.querySelector('.img-eye');
 let imgCheck = document.querySelectorAll('img');
 let texts = [];
+let symbols = '!@#$_~%^&*/|()<>,./?;{}[]';
 let lowerLetter = 0,
     upperLetter = 0,
     digit = 0,
@@ -10,7 +11,6 @@ let lowerLetter = 0,
 
 input.addEventListener('keydown', (e) => {
     let txt = e.key;
-    let symbols = '!@#$_~%^&*/|()<>,./?;{}[]';
     let lastTxt = texts[texts.length - 1];
    
     if (txt == 'CapsLock' || txt == 'Shift' || txt == 'Control' || txt == 'Alt' || txt == ' ' || txt == 'Enter') {
