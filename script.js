@@ -27,9 +27,9 @@ input.addEventListener('keydown', (e) => {
                     imgCheck[0].classList.remove('img-check');
                 } if ((lastTxt >= '0' && lastTxt <= '9')) {
                     digit -= 1;
-                } if (lastTxt >= 'a' && lastTxt <= 'z') {
+                } else if (lastTxt >= 'a' && lastTxt <= 'z') {
                     lowerLetter -= 1;
-                } if (lastTxt >= 'A' && lastTxt <= 'Z') {
+                } else if (lastTxt >= 'A' && lastTxt <= 'Z') {
                     if (lastTxt != 'Backspace') {
                         upperLetter -= 1;
                     }
@@ -51,12 +51,12 @@ input.addEventListener('keydown', (e) => {
                 imgCheck[1].src = 'check.webp';
                 imgCheck[1].classList.add('img-check');
                 digit += 1;
-            } if (txt >= 'a' && txt <= 'z') {
+            } else if (txt >= 'a' && txt <= 'z') {
                 li[2].classList.add('li');
                 imgCheck[2].src = 'check.webp';
                 imgCheck[2].classList.add('img-check');
                 lowerLetter += 1;
-            } if (txt >= 'A' && txt <= 'Z') {
+            } else if (txt >= 'A' && txt <= 'Z') {
                 if (txt != 'Backspace') {
                     li[3].classList.add('li');
                     imgCheck[3].src = 'check.webp';
